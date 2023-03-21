@@ -148,12 +148,12 @@ timedatectl set-timezone Europe/Copenhagen --no-ask-password
 echo "Provisioning phase 3 - Extra Packages or groups"
 export DEBIAN_FRONTEND=noninteractive
 apt-get -y update
-apt-get -y install htop firewalld neofetch 
+apt-get -y install firewalld neofetch 
 apt-get install -y linux-cloud-tools-virtual||true #may fail on arm64, add check for arm64
 # we don't need sssd
 #systemctl disable sssd.service||true
 #systemctl stop sssd.service||true
-echo "Provisioning phase 3 - RK hunter"
+#echo "Provisioning phase 3 - RK hunter"
 #rkhunter --propupd
 
 echo "Provisioning phase 3 - MOTD"

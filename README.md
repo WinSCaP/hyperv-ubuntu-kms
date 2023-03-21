@@ -18,5 +18,7 @@ Run the powershell script to build an Ubuntu 22.04.2 server with docker and KMS 
 
 # Now what?
 - Import the machine into Hyper-V or convert to your hypervisor
+- Login using `ubuntu`/`password` 
+- Start docker container using `sudo docker start vlmcsd` (once)
 - `slmgr -skms [VM IP]`
 - `slmgr -ato`
