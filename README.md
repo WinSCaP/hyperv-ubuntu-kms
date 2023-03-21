@@ -16,3 +16,7 @@ Run the powershell script to build an Ubuntu 22.04.2 server with docker and KMS 
 - Create a External vSwitch named `vSwitch` in Hyper-V
 - In an Admin PS: `hv_ubuntu2204.ps1`
 
+# Now what?
+- Import the machine into Hyper-V or convert to your hypervisor
+- `slmgr -skms [VM IP]`
+- `slmgr -ato`
